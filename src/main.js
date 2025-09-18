@@ -34,7 +34,7 @@ document.body.appendChild(renderer.domElement)
 
 // Controls
 const controls = new OrbitControls(camera, renderer.domElement)
-controls.maxPolarAngle = Math.PI / 2.1
+controls.maxPolarAngle = Math.PI / 2.3
 controls.minDistance = 4
 
 // Floor
