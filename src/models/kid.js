@@ -1,12 +1,12 @@
 import * as THREE from 'three'
 
 export function loadKid(gltfLoader, scene, textureLoader) {
-  const fabricColorTex = textureLoader.load('/textures/fabric/Color.jpg')
-  const fabricRoughnessTex = textureLoader.load('/textures/fabric/Roughness.jpg')
-  const fabricNormalMapTex = textureLoader.load('/textures/fabric/NormalGL.jpg')
+  const fabricColorTex = textureLoader.load('./textures/fabric/Color.jpg')
+  const fabricRoughnessTex = textureLoader.load('./textures/fabric/Roughness.jpg')
+  const fabricNormalMapTex = textureLoader.load('./textures/fabric/NormalGL.jpg')
 
   gltfLoader.load(
-    '/kid.glb',
+    './kid.glb',
     function (gltf) {
       const kidModel = gltf.scene
       scene.add(kidModel)

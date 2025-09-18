@@ -3,7 +3,7 @@ import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
 
 export function createText(fontLoader, floor) {
     return new Promise((resolve) => {
-        fontLoader.load('/fonts/helvetiker_regular.typeface.json', function (font) {
+        fontLoader.load('./fonts/helvetiker_regular.typeface.json', function (font) {
             const textGeometry = new TextGeometry('BoOs Yoo', {
                 font: font,
                 size: 0.5,
