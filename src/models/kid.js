@@ -6,7 +6,7 @@ export function loadKid(gltfLoader, scene, textureLoader) {
   const fabricNormalMapTex = textureLoader.load('./textures/fabric/NormalGL.jpg')
 
   gltfLoader.load(
-    './kid-compress.glb',
+    'https://cdn.jsdelivr.net/gh/pooyasamimi/kid3d@glb-branch/models/kid-compress.glb',
     function (gltf) {
       const kidModel = gltf.scene
       scene.add(kidModel)

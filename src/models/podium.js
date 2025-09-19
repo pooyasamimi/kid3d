@@ -6,7 +6,7 @@ export function loadPodium(gltfLoader, scene, textureLoader) {
   const rubberNormalMapTex = textureLoader.load('./textures/rubber/NormalGL.jpg')
 
   gltfLoader.load(
-    './podium-draco.glb',
+    'https://cdn.jsdelivr.net/gh/pooyasamimi/kid3d@glb-branch/models/podium-draco.glb',
     function (gltf) {
       const podiumModel = gltf.scene
       scene.add(podiumModel)
