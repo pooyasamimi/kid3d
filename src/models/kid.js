@@ -6,7 +6,7 @@ export function loadKid(gltfLoader, scene, textureLoader) {
   const fabricNormalMapTex = textureLoader.load('./textures/fabric/NormalGL.jpg')
 
   gltfLoader.load(
-    './kid.glb',
+    './kid-compress.glb',
     function (gltf) {
       const kidModel = gltf.scene
       scene.add(kidModel)
@@ -35,7 +35,7 @@ export function loadKid(gltfLoader, scene, textureLoader) {
     },
     undefined,
     function (error) {
-      alert('Kid load error')
+      alert('Kid load error' + error)
     }
   )
 }

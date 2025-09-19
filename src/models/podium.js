@@ -6,7 +6,7 @@ export function loadPodium(gltfLoader, scene, textureLoader) {
   const rubberNormalMapTex = textureLoader.load('./textures/rubber/NormalGL.jpg')
 
   gltfLoader.load(
-    './podium.glb',
+    './podium-draco.glb',
     function (gltf) {
       const podiumModel = gltf.scene
       scene.add(podiumModel)
@@ -23,7 +23,7 @@ export function loadPodium(gltfLoader, scene, textureLoader) {
     },
     undefined,
     function (error) {
-      alert('Podium load error')
+      alert('Podium load error' + error)
     }
   )
 }
